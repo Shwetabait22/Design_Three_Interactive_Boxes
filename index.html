@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design of Three Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div class="title mx-auto">
+            <div class="line"></div>
+            <span class="bogo-text">YAY! It’s BOGO</span>
+            <div class="line"></div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion mx-auto" id="customAccordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item border rounded">
+                <h2 class="accordion-header">
+                    <button class="accordion-button d-flex align-items-center gap-3" type="button">
+                        <input class="form-check-input me-2" type="radio" name="unitOption" checked>
+                        <div class="d-flex flex-column">
+                            <div class="acc-title d-flex align-items-center">
+                                <strong>
+                                    <p>1 Unit</p>
+                                </strong>
+                                <span class="discount-badge ms-2">10% Off</span>
+                            </div>
+                            <span class="text-muted small">Standard Price</span>
+                        </div>
+                        <div class="ms-auto">
+                            <strong>$10.00 USD</strong><br>
+                            <span class="text-muted text-decoration-line-through">$24.00 USD</span>
+                        </div>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseOne">
+                    <div class="accordion-body">
+                        <div class="p-1">
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-4">Size</div>
+                                <div class="col-4">Colour</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-1 d-flex align-items-center">#1</div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>S</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>Black</option>
+                                        <option>White</option>
+                                        <option>Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-1 d-flex align-items-center">#2</div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>S</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>Black</option>
+                                        <option>White</option>
+                                        <option>Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item border rounded mt-5 most-popular">
+                <div class="most-popular-badge">MOST POPULAR</div>
+                <h2 class="accordion-header">
+                    <button class="accordion-button d-flex align-items-center gap-3" type="button">
+                        <input class="form-check-input me-2" type="radio" name="unitOption">
+                        <div class="d-flex flex-column">
+                            <div class="acc-title d-flex align-items-center">
+                                <strong>
+                                    <p>2 Unit</p>
+                                </strong>
+                                <span class="discount-badge ms-2">20% Off</span>
+                            </div>
+                            <!-- <span class="text-muted small">Better Value</span> -->
+                        </div>
+                        <div class="ms-auto">
+                            <strong>$18.00 USD</strong><br>
+                            <span class="text-muted text-decoration-line-through">$24.00 USD</span>
+                        </div>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseTwo">
+                    <div class="accordion-body">
+                        <div class="p-1">
+                            <div class="row">
+                                <div class="col-6 text-center fw-bold">Size</div>
+                                <div class="col-6 text-center fw-bold">Colour</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-2 d-flex align-items-center">#1</div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>S</option>
+                                        <option>L</option>
+                                        <option>M</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>Black</option>
+                                        <option>White</option>
+                                        <option>Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-2 d-flex align-items-center">#2</div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>S</option>
+                                        <option>L</option>
+                                        <option>M</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>White</option>
+                                        <option>Black</option>
+                                        <option>Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item border rounded mt-5">
+                <h2 class="accordion-header">
+                    <button class="accordion-button d-flex align-items-center gap-3" type="button">
+                        <input class="form-check-input me-2" type="radio" name="unitOption">
+                        <div class="d-flex flex-column">
+                            <div class="acc-title d-flex align-items-center">
+                                <strong>
+                                    <p>3 Units</p>
+                                </strong>
+                                <span class="discount-badge ms-2">30% Off</span>
+                            </div>
+                            <!-- <span class="text-muted small">Best Value</span> -->
+                        </div>
+                        <div class="ms-auto">
+                            <strong>$24.00 USD</strong><br>
+                            <span class="text-muted text-decoration-line-through">$24.00 USD</span>
+                        </div>
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseThree">
+                    <div class="accordion-body">
+                        <div class="p-1">
+                            <div class="row">
+                                <div class="col-6 text-center fw-bold">Size</div>
+                                <div class="col-6 text-center fw-bold">Colour</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-2 d-flex align-items-center">#1</div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>L</option>
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <select class="form-select">
+                                        <option>Red</option>
+                                        <option>Black</option>
+                                        <option>Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer-card p-3 rounded mx-auto">
+            <div class="d-flex justify-content-between align-items-center">
+                <span class="free-del">Free Delivery</span>
+                <span class="total-usd">Total : <span class="text-dark">$18.00 USD</span></span>
+            </div>
+            <button class="btn w-100 mt-2 add-to-cart">
+                <span class="fw-bold">+</span> Add to Cart
+            </button>
+            <div class="text-end mt-2 text-muted small">
+                <em>@ Powered by Pumper</em>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
